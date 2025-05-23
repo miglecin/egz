@@ -1,0 +1,28 @@
+# Build katalogai
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/cmake_install.cmake
+
+# VSCODE aplankas
+.vscode/
+
+# macOS failas
+.DS_Store
+
+# Kompiliuoti failai
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Testo tekstai ir laikinai generuoti duomenys
+tekstas.txt
+dazniai.txt
+kryzmine.txt
+urlai.txt
+tlds.txt
