@@ -32,7 +32,7 @@ int main() {
                     break;
 
                 case 3: {
-                    std::set<std::string> tldai = ikrauti_tld_sarasa("tlds.txt");
+                    std::set<string> tldai = ikrauti_tld_sarasa("tlds.txt");
                     rasti_url_adresus("tekstas.txt", "urlai.txt", tldai);
                     std::cout << " URL'ai rasti. Rezultatai faile urlai.txt\n";
                     break;

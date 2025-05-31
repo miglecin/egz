@@ -12,18 +12,6 @@ using std::string;
 string isvalyti_zodi(const string& zodis) {
     return std::regex_replace(zodis, std::regex(R"([^[:alnum:]ąčęėįšųūžĄČĘĖĮŠŲŪŽ])"), "");
 }
-// Paprasta filtravimo funkcija, kuri leidžia UTF-8 ženklus
-/*string isvalyti_zodi(const string& zodis) {
-    
-    string rezultatas;
-    for (char raide : zodis) {
-        // leidžiam ir lotyniškus simbolius, ir UTF-8 (kai > 0 arba rašytinis ženklas)
-        if (std::isalnum((unsigned char)raide) || (unsigned char)raide > 127) {
-            rezultatas += std::tolower((unsigned char)raide);
-        }
-    }
-    return rezultatas;
-}*/
 
 void skaiciuoti_zodzius(const string& ivestis_failas, const string& isvestis_failas) {
     std::ifstream ivestis(ivestis_failas);
